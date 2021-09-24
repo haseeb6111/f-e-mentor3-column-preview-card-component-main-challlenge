@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  margin: 2.5rem 2rem 2.5rem 2rem;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60% 60% 60%;
+      grid-template-rows: 60% 60% 60%;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.main-container .sedans-container {
+  background: #e38826;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .sedans-container .sedan-inner-container {
+  height: 80%;
+  width: 80%;
+}
+
+.main-container .sedans-container .sedan-inner-container .sedan-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  margin: 5% 0%;
+}
+
+.main-container .sedans-container .sedan-inner-container .sedan-para {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.main-container .sedans-container .sedan-inner-container .sedan-btn {
+  background: #f2f2f2;
+  width: 35vw;
+  height: 6vh;
+  border-radius: 5em;
+  cursor: pointer;
+  border: none;
+  color: #e38826;
+  position: relative;
+  top: 1rem;
+}
+
+.main-container .sedans-container .sedan-inner-container .sedan-btn:hover {
+  background: #e38826;
+  color: white;
+  border: 1px solid white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-container .suvs-container {
+  background: #006970;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .suvs-container .suvs-inner-container {
+  height: 80%;
+  width: 80%;
+}
+
+.main-container .suvs-container .suvs-inner-container .suvs-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  margin: 5% 0%;
+}
+
+.main-container .suvs-container .suvs-inner-container .suvs-para {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.main-container .suvs-container .suvs-inner-container .suvs-btn {
+  background: #f2f2f2;
+  width: 35vw;
+  height: 6vh;
+  border-radius: 5em;
+  cursor: pointer;
+  border: none;
+  color: #006970;
+  position: relative;
+  top: 1rem;
+}
+
+.main-container .suvs-container .suvs-inner-container .suvs-btn:hover {
+  background: #006970;
+  color: white;
+  border: 1px solid white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main-container .luxury-container {
+  background: #004241;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .luxury-container .luxury-inner-container {
+  height: 80%;
+  width: 80%;
+}
+
+.main-container .luxury-container .luxury-inner-container .luxury-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  margin: 5% 0%;
+}
+
+.main-container .luxury-container .luxury-inner-container .luxury-para {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.main-container .luxury-container .luxury-inner-container .luxury-btn {
+  background: #f2f2f2;
+  width: 35vw;
+  height: 6vh;
+  border-radius: 5em;
+  cursor: pointer;
+  border: none;
+  color: #004241;
+  position: relative;
+  top: 1rem;
+}
+
+.main-container .luxury-container .luxury-inner-container .luxury-btn:hover {
+  background: #004241;
+  color: white;
+  border: 1px solid white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+@media screen and (min-height: 569px) and (max-width: 1023px) {
+  .btn {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main-container {
+    height: 60vh;
+    width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main-container .sedans-container {
+    height: 60vh;
+    width: 75vw/3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main-container .sedans-container .sedan-inner-container .sedan-btn {
+    height: 3rem;
+    width: 7rem;
+  }
+  body .main-container .suvs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60vh;
+    width: 75vw/3;
+  }
+  body .main-container .suvs-container .suvs-inner-container .suvs-btn {
+    height: 3rem;
+    width: 7rem;
+  }
+  body .main-container .luxury-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60vh;
+    width: 75vw/3;
+  }
+  body .main-container .luxury-container .luxury-inner-container .luxury-btn {
+    height: 3rem;
+    width: 7rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

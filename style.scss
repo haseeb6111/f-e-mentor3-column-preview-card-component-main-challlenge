@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap");
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    color: white;
+    margin: 5% 0%;
+}
+
+@mixin para {
+    font-size: 0.75rem;
+    color: white;
+}
+
+@mixin btn($color) {
+    background: hsl(0, 0%, 95%);
+    width: 35vw;
+    height: 6vh;
+    border-radius: 5em;
+    cursor: pointer;
+    border: none;
+    color: $color;
+    &:hover {
+        background: $color;
+        color: white;
+        border: 1px solid white;
+        align-self: flex-end;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+$Bright-orange: hsl(31,
+77%,
+52%);
+$Dark-cyan: hsl(184,
+100%,
+22%);
+$Very-dark-cyan: hsl(179,
+100%,
+13%);
+$Transparent-white--paragraphs: hsla(0,
+0%,
+100%,
+0.75);
+$Very-light-gray--background--headings--buttons: hsl(0,
+0%,
+95%);
+.main-container {
+    margin: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 60% 60% 60%;
+    font-family: "Lexend Deca", sans-serif;
+    .sedans-container {
+        background: $Bright-orange;
+        @include flexCenter();
+        .sedan-inner-container {
+            height: 80%;
+            width: 80%;
+            //
+            .sedan-heading {
+                @include heading();
+            }
+            .sedan-para {
+                @include para();
+            }
+            .sedan-btn {
+                @include btn($Bright-orange);
+                position: relative;
+                top: 1rem;
+            }
+        }
+    }
+    .suvs-container {
+        background: $Dark-cyan;
+        @include flexCenter();
+        .suvs-inner-container {
+            height: 80%;
+            width: 80%;
+            //
+            .suvs-heading {
+                @include heading();
+            }
+            .suvs-para {
+                @include para();
+            }
+            .suvs-btn {
+                @include btn($Dark-cyan);
+                position: relative;
+                top: 1rem;
+            }
+        }
+    }
+    .luxury-container {
+        background: $Very-dark-cyan;
+        @include flexCenter();
+        .luxury-inner-container {
+            height: 80%;
+            width: 80%;
+            //
+            .luxury-heading {
+                @include heading();
+            }
+            .luxury-para {
+                @include para();
+            }
+            .luxury-btn {
+                @include btn($Very-dark-cyan);
+                position: relative;
+                top: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-height: 569px) and (max-width: 1023px) {
+    .btn {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        height: 100vh;
+        @include flexCenter();
+        .main-container {
+            height: 60vh;
+            width: 75vw;
+            @include flexCenter();
+            .sedans-container {
+                height: 60vh;
+                width: 75vw/3;
+                @include flexCenter();
+                .sedan-inner-container {
+                    .sedan-btn {
+                        height: 3rem;
+                        width: 7rem;
+                    }
+                }
+            }
+            .suvs-container {
+                @include flexCenter();
+                height: 60vh;
+                width: 75vw/3;
+                .suvs-inner-container {
+                    .suvs-btn {
+                        height: 3rem;
+                        width: 7rem;
+                    }
+                }
+            }
+            .luxury-container {
+                @include flexCenter();
+                height: 60vh;
+                width: 75vw/3;
+                .luxury-inner-container {
+                    .luxury-btn {
+                        height: 3rem;
+                        width: 7rem;
+                    }
+                }
+            }
+        }
+    }
+}
